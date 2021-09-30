@@ -6,26 +6,26 @@
         <div class="card-body">
             <form action="/new-contact" method="POST">
                 <div class="form-group">
-                    <input type="text" id="labelmedium" name="firstname" placeholder="Nombres" class="form-control" autofocus>
+                    <input type="text" id="labelmedium" name="firstname" placeholder="Nombres" class="form-control" autofocus required>
                 </div>
                 <div class="form-group">
-                    <input type="text" id="labelmedium" name="lastname"  placeholder="Apellidos" class="form-control">
+                    <input type="text" id="labelmedium" name="lastname"  placeholder="Apellidos" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <input type="dni" id="labelshort" name="phone" placeholder="DNI" class="form-control">
+                    <input type="text" id="labelshort" name="dni" placeholder="DNI" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="labelmedium" name="email" placeholder="Correo" class="form-control">
+                    <input type="email" id="labelmedium" name="email" placeholder="Correo" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" id="labelshort" name="phone" placeholder="Telefono" class="form-control">
+                    <input type="tel" id="labelshort" name="phone" placeholder="Telefono" class="form-control" required>
                 </div>
                 
                 <div class="form-group row">
-                    <label  class="col-sm-2 col-form-label">Lima:</label>
+                    <label  class="col-sm-2 col-form-label ">Lima:</label>
                     <div class="col-sm-6 ">                   
-                        <select class="form-select" id="provincia">
-                            <option selected>Distrito</option>
+                        <select class="form-select" id="provincia" required>
+                            <option selected>--Distrito--</option>
                             <option value="1">ANCÓN</option>
                             <option value="2">ATE</option>
                             <option value="3">BARRANCO</option>
@@ -40,34 +40,394 @@
                             <option value="12">JESÚS MARÍA</option>
                             <option value="13">LA MOLINA</option>
                             <option value="14">LA VICTORIA</option>
-                            <option value="15">LA VICTORIA</option>
-                            <option value="16">LA VICTORIA</option>
-                            <option value="17">LA VICTORIA</option>
-                            <option value="18">LA VICTORIA</option>
-                            <option value="19">LA VICTORIA</option>
-                            <option value="20">LA VICTORIA</option>
-                            <option value="21">LA VICTORIA</option>
-                            <option value="22">LA VICTORIA</option>
-                            <option value="23">LA VICTORIA</option>
-                            <option value="24">LA VICTORIA</option>
+                            <option value="15">LIMA</option>
+                            <option value="16">LINCE</option>
+                            <option value="17">LOS OLIVOS</option>
+                            <option value="18">LURIGANCHO-CHOSICA </option>
+                            <option value="19">LURÍN</option>
+                            <option value="20">MAGDALENA DEL MAR</option>
+                            <option value="21">MIRAFLORES</option>
+                            <option value="22">PACHACÁMAC</option>
+                            <option value="23">PUCUSANA</option>
+                            <option value="24">PUEBLO LIBRE</option>
+                            <option value="25">PUENTE PIEDRA</option>
+                            <option value="26">PUNTA HERMOSA</option>
+                            <option value="27">PUNTA NEGRA</option>
+                            <option value="28">RÍMAC</option>
+                            <option value="29">SAN BARTOLO</option>
+                            <option value="30">SAN BORJA</option>
+                            <option value="31">SAN ISIDRO</option>
+                            <option value="32">SAN JUAN DE LURIGANCHO</option>
+                            <option value="33">SAN JUAN DE MIRAFLORES</option>
+                            <option value="34">SAN LUIS</option>
+                            <option value="35">SAN MARTIN DE PORRES</option>
+                            <option value="36">SAN MIGUEL</option>
+                            <option value="37">SANTA ANITA</option>
+                            <option value="38">SANTA MARÍA DEL MAR</option>
+                            <option value="39">SANTA ROSA</option>
+                            <option value="40">SANTIAGO DE SURCO</option>
+                            <option value="41">SURQUILLO</option>
+                            <option value="42">VILLA EL SALVADOR</option>
+                            <option value="43">VILLA MARIA DEL TRIUNFO</option>
                         </select>
                     </div>
-                 </div>       
+                 </div>      
+                 <!--              -------Puestos de trabajo------------               --> 
+                 <div class="form-group">
+                     <legend class="mt-4">Usted postula a:</legend>
+                 </div>             
+                     <div class="row mb-3">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" name="puesto1" value="carpinteria"  type="checkbox"  id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Carpintería
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="puesto2" value="cerrajeria" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Cerrajería
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="puesto3" value="limpieza" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Limpieza
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" name="puesto4" value="electricista" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Electricista
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="puesto5" value="sofyhad" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Software y Hardware
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Gasfitería
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Vidriería
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Línea Blanca y Marrón
+                                </label>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Jardinería
+                                </label>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <input type="text" id="labelshort" name="otros" placeholder="Otros..." class="form-control" required>
+                </div>
+                    <!--  ---------Distritos para trabajar---------- --> 
+                <div class="form-group">
+                     <legend class="mt-4">Distrito en donde puede trabajar:</legend>
+                 </div>             
+                     <div class="row mb-3">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                ANCÓN
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                ATE
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                BARRANCO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                BREÑA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                CARABAYLLO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                CHACLACAYO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                CHORRILLOS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                CIENEGUILLA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                               COMAS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                EL AGUSTINO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                INDEPENDENCIA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                JESÚS MARÍA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                LA MOLINA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                LA VICTORIA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                LIMA
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                LINCE
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                LOS OLIVOS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                LURIGANCHO-CHOSICA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                LURÍN
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                MAGDALENA DEL MAR
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                MIRAFLORES
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                PACHACÁMAC
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                PUCUSANA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                PUEBLO LIBRE
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                PUENTE PIEDRA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                PUNTA HERMOSA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                PUNTA NEGRA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                RÍMAC
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN BARTOLO
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN BORJA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN ISIDRO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN JUAN DE LURIGANCHO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN JUAN DE MIRAFLORES
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN LUIS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN MARTIN DE PORRES    
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SAN MIGUEL
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SANTA ANITA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SANTA MARÍA DEL MAR
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SANTA ROSA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SANTIAGO DE SURCO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                SURQUILLO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                VILLA EL SALVADOR
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                VILLA MARIA DEL TRIUNFO
+                                </label>
+                            </div>    
+                        </div>
+                    </div>    
+                
                 <div class="form-group">
                    <label for="formFile" class="form-label mt-4">Ingrese sus antecedentes penales</label>
-                    <input class="form-control" name="antecedentes" type="file" id="formFile">
+                    <input class="form-control" name="antecedentes" type="file" id="formFile" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleTextarea"  class="form-label mt-4">Describe tu personalidad</label>
-                    <textarea class="form-control" name="personality" placeholder="Soy adulto independiente..." id="exampleTextarea" rows="3"></textarea>
+                    <textarea class="form-control" name="personality" placeholder="Soy adulto independiente..." id="exampleTextarea" rows="3" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleTextarea" class="form-label mt-4">Describe tus Habilidades y Fortalezas</label>
-                    <textarea class="form-control" name="habilities" id="exampleTextarea" rows="3"></textarea>
+                    <textarea class="form-control" name="habilities" id="exampleTextarea" rows="3" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleTextarea" class="form-label mt-4">¿Cúales son tus metas a corto y largo plazo?</label>
-                    <textarea class="form-control" name="metas" id="exampleTextarea" rows="3"></textarea>
+                    <textarea class="form-control" name="metas" id="exampleTextarea" rows="3" required></textarea>
                 </div>
                 
         </div>
