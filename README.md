@@ -9,7 +9,7 @@ express-handlebars
 -
 morgan
 -
-*firebase-admin
+**firebase-admin
 -
 ibm-watson@^6.1.2
 -
