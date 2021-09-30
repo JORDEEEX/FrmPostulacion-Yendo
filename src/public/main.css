@@ -8,6 +8,7 @@ body{
 #btnsend{
     border-radius: 20px;
     width:200px;
+    float: right;
     
 }
 #labelshort{
