@@ -1,0 +1,62 @@
+<div class="col-md-8 offset-md-2">
+    <div class="card">
+        <div class="card-header">
+            <h1>Postulacion</h1>
+        </div>
+        <div class="card-body">
+            <form action="/new-contact" method="POST">
+                <div class="form-group">
+                    <input type="text" id="labelmedium" name="firstname" placeholder="Nombres" class="form-control" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="labelmedium" name="lastname"  placeholder="Apellidos" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="labelshort" name="phone" placeholder="DNI" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="labelmedium" name="email" placeholder="Correo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="labelshort" name="phone" placeholder="Telefono" class="form-control">
+                </div>
+                
+                <div class="form-group row">
+                    <label  class="col-sm-2 col-form-label">Lima:</label>
+                    <div class="col-sm-6 ">                   
+                        <select class="form-select" id="provincia">
+                            <option selected>Distrito</option>
+                            <option value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                 </div>       
+                <div class="form-group">
+                   <label for="formFile" class="form-label mt-4">Ingrese sus antecedentes penales</label>
+                    <input class="form-control" name="antecedentes" type="file" id="formFile">
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea"  class="form-label mt-4">Describe tu personalidad</label>
+                    <textarea class="form-control" placeholder="Soy adulto independiente..." id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">Describe tus Habilidades y Fortalezas</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">¿Cúales son tus metas a corto y largo plazo?</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                
+        </div>
+        <div class="card-footer">            
+                <button id="btnsend" class="btn btn-primary btn-block">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
