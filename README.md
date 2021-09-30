@@ -1,5 +1,5 @@
 # FrmPostulacion-Yendo
-## For use this proyect, you must install this Dependecias
+## For use this proyect, you must install this Dependeces
 
 - express
 
