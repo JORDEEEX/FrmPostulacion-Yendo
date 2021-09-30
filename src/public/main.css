@@ -1,5 +1,8 @@
 body{
-    background: rgb(62,16,81);
+  font-family: Poppins, sans-serif;
+    background-color: rgb(248, 244, 244);
+  font-size: 13px;
+  background: rgb(62,16,81);
     background: linear-gradient(90deg, rgba(62,16,81,1) 0%, rgba(122,32,160,1) 100%, rgba(0,212,255,1) 100%);
 }
 #btnsend{
@@ -9,11 +12,17 @@ body{
 }
 #labelshort{
     width: 30%;
+    border-radius: 20px;
 }
 #labelmedium{
     width: 50%;
+    border-radius: 20px;
+}
+#textgrind{
+  border-radius: 15px;
 }
 .form-select {
+    border-radius: 20px;
     display: block;
     width:80%;
     padding: 0.375rem 2.25rem 0.375rem 0.75rem;
@@ -32,14 +41,14 @@ body{
     background-size: 16px 12px;
     border: 1px solid #cbc8d0;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-    border-radius: 0;
+    border-radius: 20px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 #formFile {
-    display: block;
+  display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -52,7 +61,7 @@ body{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 0;
+  border-radius: 20px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control[type="file"] {
@@ -135,6 +144,7 @@ body{
   }
   
   .form-control::-webkit-file-upload-button {
+
     padding: 0.375rem 0.75rem;
     margin: -0.375rem -0.75rem;
     -webkit-margin-end: 0.75rem;
