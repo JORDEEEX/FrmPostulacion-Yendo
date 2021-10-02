@@ -1,5 +1,5 @@
 // const { db} = require('../firebase/firebase');
-const { analyzeText } = require( "../ibmApi/ibmApi");
+const { analyzeText } = require("../ibmApi/ibmApi");
 const { Router } = require('express');
 const router = Router();
 const admin = require('firebase-admin');
@@ -7,31 +7,32 @@ var serviceAccount = require("../../db-postulation-firebase-adminsdk-8slfh-261de
 
 // initialize firebase
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert(serviceAccount)
 });
 
 // const storageFirebase = admin.storage();
 const db = admin.firestore();
 const storage = admin.storage();
+
 router.get('/', (req, res) => {
     res.render('index');
 })
 
-router.post( '/new-employee', async (req, res) => {
+router.post('/new-employee', async (req, res) => {
     // console.log(JSON.stringify(req.body, null, 2))
 
     const newEmployee = JSON.parse(JSON.stringify(req.body));// personalData
-    typeof(req.body.crimRecords);
+    console.log(typeof (req.body.crimRecords));
     // API IBM EMOTION, SENTIMENT
     let text = `${req.body.personality}. ${req.body.habilities}. ${req.body.goals}.`;
     // console.log(textIbm)
-    async function analyzeByIBM (text) {
+    async function analyzeByIBM(text) {
         return await analyzeText(text);
     }
     results = await analyzeByIBM(text); // IBM results
     let data = Object.assign(newEmployee, results); // objectFormat
     // db.collection("employees").doc().set(data); // db 
-    
+
     // console.log(results)
     res.send('received');
 })
