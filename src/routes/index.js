@@ -14,8 +14,9 @@ admin.initializeApp({
 const db = admin.firestore();
 const storage = admin.storage();
 router.get('/', (req, res) => {
-    res.render('index');
+    res.render('confirmation');
 })
+
 
 router.post( '/new-employee', async (req, res) => {
     // console.log(JSON.stringify(req.body, null, 2))

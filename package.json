@@ -14,7 +14,7 @@
     "express-handlebars": "^5.3.4",
     "firebase": "^9.1.1",
     "firebase-admin": "^9.12.0",
-    "ibm-watson": "^6.2.0",
+    "ibm-watson": "^6.1.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

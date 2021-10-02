@@ -13,6 +13,11 @@ body {
   width: 200px;
   float: right;
 }
+#btnsendq {
+  border-radius: 20px;
+  width: 200px;
+  right: 30px;
+}
 
 #labelshort {
   width: 30%;
@@ -25,6 +30,9 @@ body {
 }
 #textgrind{
   border-radius: 15px;
+}
+#imgworker{
+  padding-left: 55px;
 }
 
 .form-select {
