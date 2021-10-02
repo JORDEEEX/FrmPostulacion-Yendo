@@ -37,21 +37,16 @@ async function analyzeText(text) {
                     let emotions = analysisResults['result']['emotion']['document']['emotion'];
                     let sentiments = analysisResults['result']['sentiment']['document'];
                     let result = Object.assign(emotions, sentiments);
-                    // db.collection("employees").doc().set(data);
-                    // console.log(JSON.stringify(result, null, 2));
                     return result;
                 })
                 .catch(err => {
                     console.log('error:', err)
                 })
-                // console.log(result);
                 return result;
         })
         .catch(err => {
             console.log('error:', err);
         });
-        
-        // console.log(result);
     return result;
 }
 
